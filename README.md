@@ -38,8 +38,17 @@ string that is an HTML unordered list of those strings.
 You should include a brief explanation of your code. Then, what would you have
 to consider if the original list was provided by user input?**
 
+See problem1.py.  If this were user generated content then you would need to
+sanitize the input data, using something like the Python library "bleach".
+
 **List 2-3 attacks that web applications are vulnerable to. How do these attacks
 work? How can we prevent those attacks?**
+
+**XXS - Cross site scripting** This form of attack allows a maliscious user to use
+a form to add script to a page that will perform some nefarious act when another
+visitor to that page does something on that page.
+
+**CSRF - Cross site request forgery**
 
 **Here is some starter code for a Flask Web Application. Expand on that and
 include a route that simulates rolling two dice and returns the result in JSON.

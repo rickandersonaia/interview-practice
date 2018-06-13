@@ -1,0 +1,18 @@
+# This function loops over a list of strings and prints out each print_strings
+# First it checks to make sure the list isn't empty then it loops
+
+
+data = [
+    "He's not the messiah, he's a very naughty boy!",
+    "Well, obviously it's not meant to be taken literally; it refers to any manufacturers of dairy products.",
+    "You haven't got a womb! Where's the foetus gonna gestate? You gonna keep it in a box?"
+]
+
+
+def print_strings(list):
+    if list:
+        for string in list:
+            print(string)
+
+
+print_strings(data);
