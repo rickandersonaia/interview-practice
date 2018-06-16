@@ -44,11 +44,21 @@ sanitize the input data, using something like the Python library "bleach".
 **List 2-3 attacks that web applications are vulnerable to. How do these attacks
 work? How can we prevent those attacks?**
 
-**XXS - Cross site scripting** This form of attack allows a maliscious user to use
-a form to add script to a page that will perform some nefarious act when another
-visitor to that page does something on that page.
+**XXS - Cross Site Scripting** This form of attack allows a maliscious user to
+use a form to add script to the database that will then be printed to the page.
+That script may perform some nefarious act when others visit that page.
 
-**CSRF - Cross site request forgery**
+The solution to this is to sanitize all data before saving it to the database.
+
+**CSRF - Cross Site Request Forgery** This form of attack attempts to hijack
+open sessions in the browser.  It attempts to capture session data stored in
+the browser and then gain access to the open session.  Once it has access to
+the session it can perform any of the actions allowed by the session.
+
+The solution to this is to use a COORs plugin to check the origin of the request
+and to deny requests that don't have the same origin as the original session
+holder. This is done by creating a secret token that is required along with all
+requests but is hidden from the browser.
 
 **Here is some starter code for a Flask Web Application. Expand on that and
 include a route that simulates rolling two dice and returns the result in JSON.
@@ -56,3 +66,7 @@ You should include a brief explanation of your code.**
 
 **If you were to start your full-stack developer position today, what would be
 your goals a year from now?**
+
+My goals would be to have mastered the company's systems (coding standards,
+testing, communication, software) and to exceed the expectations of both
+supervisors and co-workers.
