@@ -64,6 +64,8 @@ requests but is hidden from the browser.
 include a route that simulates rolling two dice and returns the result in JSON.
 You should include a brief explanation of your code.**
 
+See app.py
+
 **If you were to start your full-stack developer position today, what would be
 your goals a year from now?**
 
